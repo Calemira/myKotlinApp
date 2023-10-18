@@ -20,7 +20,18 @@
         android:orientation="horizontal">
 
     </LinearLayout>
-    <!-- Ramka na zdjęcie -->
+
+    <TextView
+        android:id="@+id/aboutme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-382dp"
+        android:layout_marginEnd="94dp"
+        android:text="Aplikacja o mnie"
+        android:textSize="30sp" />
+
     <ImageView
         android:id="@+id/profileImage"
         android:layout_width="200dp"
@@ -29,7 +40,6 @@
         android:src="@drawable/hello_piesek"
         android:scaleType="fitXY" />
 
-    <!-- Imię i nazwisko -->
     <TextView
         android:id="@+id/yourName"
         android:layout_width="wrap_content"

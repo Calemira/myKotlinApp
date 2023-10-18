@@ -20,4 +20,8 @@ class AboutMeActivity : AppCompatActivity() {
     fun returnToMain(view: View) {
         finish()
     }
+
+    fun goBack(view: View) {
+        onBackPressed()
+    }
 }
