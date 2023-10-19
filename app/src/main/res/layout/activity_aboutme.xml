@@ -7,12 +7,22 @@
     tools:context=".MainActivity"
     android:background="#FFC0CB">
 
+    <ImageButton
+        android:id="@+id/earthButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="163dp"
+        android:contentDescription="Earth Icon"
+        android:src="@drawable/ziemia" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="372dp"
         android:padding="16dp"
+        android:gravity="center"
         android:text="Jestem studentką automatyki, robotyki i systemów sterowania na Politechnice Gdańskiej. Moim ulubionym ulubionym zwierzęciem są psy. Pracuje jako programistka systemów wbudowanych, a moja pasja to programowanie i gotowanie. W wolnym czasie gram w gry komputerowe i na PlayStation."
         android:textSize="18sp" />
 
@@ -22,6 +32,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="314dp"
         android:padding="16dp"
+        android:gravity="center"
         android:text="Czy chcesz wziąć udział w quizie o mnie?"
         android:textSize="20sp" />
 

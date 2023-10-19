@@ -5,11 +5,21 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import android.widget.ImageButton
 
 class AboutMeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aboutme)
+
+        val earthButton = findViewById<ImageButton>(R.id.earthButton)
+        earthButton.setOnClickListener {
+            // Tutaj otwórz nową aktywność
+            val intent = Intent(this, TravelActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 
     fun startQuiz(view: View) {
@@ -24,4 +34,5 @@ class AboutMeActivity : AppCompatActivity() {
     fun goBack(view: View) {
         onBackPressed()
     }
+
 }
