@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.Button
 import android.widget.ImageButton
 
 class AboutMeActivity : AppCompatActivity() {
@@ -14,12 +13,9 @@ class AboutMeActivity : AppCompatActivity() {
 
         val earthButton = findViewById<ImageButton>(R.id.earthButton)
         earthButton.setOnClickListener {
-            // Tutaj otwórz nową aktywność
             val intent = Intent(this, TravelActivity::class.java)
             startActivity(intent)
         }
-
-
     }
 
     fun startQuiz(view: View) {
