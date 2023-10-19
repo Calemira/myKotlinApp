@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TravelActivity"
+    android:background="#e4c3e2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/buttons_layout">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/aboutme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-386dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="Oprócz wcześniej wymienionych uwielbiam podróżować"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/kos"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/yourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Miejsca które zwiedziłam to: Kos, Mediolan, Sztokholm, Berlin, Praga, Wiedeń"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop='610dp'
+        android:layout_margin="15dp"
+        android:background="@android:color/holo_purple"
+        android:drawableLeft="@android:drawable/ic_media_previous"
+        android:onClick="goBack"
+        android:text="Back" />
+
+
+</RelativeLayout>
